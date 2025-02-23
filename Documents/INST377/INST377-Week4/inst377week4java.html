@@ -1,0 +1,26 @@
+<html>
+    <head>
+    <title>INST377 JS Pracrice</title>
+    </head> 
+
+    <body>
+        <h1 id="word">This element will change color</h1>
+        <button onclick="changeColor()">chnage this color</button>
+
+        <!-- JavaScirpt Code-->
+        <script type="text/javascript">
+            function changeColor() {
+                console.log('Attempting to change color of text, current color is:', document.getElementById("word").style.color)
+            
+                if(document.getElementById("word").style.color == 'red') {
+                    document.getElementById("word").style.color = 'black';
+                } else{
+                    document.getElementById("word").style.color = 'red';
+                }
+
+                console.log('Successfully changed color of text, current color of text is:', document.getElementById("word").style.color)
+            }
+
+        </script>
+    </body>
+</html>

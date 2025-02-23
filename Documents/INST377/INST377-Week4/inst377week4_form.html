@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title> INST377- Form Validation</title>
+    </head>
+
+    <body>
+        <form name="contactForm" onsubmit="return formValidation()" action="https://www.google.com">
+            <label for="fistName"> First Name:</label>
+            <input type="text" placeholder="John" id="firstName" required>
+            <br>
+            <input type="submit">
+        </form>
+        
+
+        <!--JavaScript-->
+        <script type="text/javascript">
+            function formValidation(){
+                const validationRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+                console.log('Validating user input:', document.contactForm.firstName.value)
+                if(document.contactForm.firstName.value.trim()==""){// removes any whitespace and checks if empty
+                    document.body.style.backgroundColor = "orange"
+                    alert('Enter a Valid First Name!')
+                    
+                    return false;
+                }
+                if(validationRegex.test(document.contactForm.firstName.value)){
+                    document.body.style.backgroundColor = "red";
+                    alert("I cannot let you do that!")
+                    return false
+                }
+                
+            }
+        </script>
+    </body>
+</html>
