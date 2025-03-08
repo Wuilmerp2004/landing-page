@@ -33,6 +33,8 @@ Here's a walkthrough of implemented required features:
 <img src='![Kapture 2025-03-08 at 00 02 04](https://github.com/user-attachments/assets/7d893b7f-e68d-4af4-8da3-8cbb274d4a10)
 ' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+![Kapture 2025-03-08 at 00 02 04](https://github.com/user-attachments/assets/68749236-6316-476b-9593-6460b745522b)
+
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
 <!-- Recommended tools:
